@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitácora tecnología Andrade</title>
+    <link rel="icon" href="recursos/img/LC1.png" type="image/png">
+    <style>
+        html,body{
+        height: 100%;
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+     body{
+        display: flex;
+        flex-direction:   column;
+        text-align: center;
+     }
+      header{
+        padding: 20px;
+        background-color: rgb(208, 118, 163);
+      }
+      h1{
+        color: rgb(229, 160, 196);
+        margin: 0;
+        text-shadow: 0 0 5px #fff, 0 0 10px #f9d685, 0 0 20px #df6969, 0 0 40px #ff26de;
+
+      }
+      main{
+        flex: 1;
+        padding: 40px 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 50px;
+        border-top: 1pxs solid rgb(79, 230, 19);
+        background-color: cadetblue;
+      }
+      @media(max-width:600px){
+        footer{
+            flex-direction: column;
+            gap: 15px;
+            padding: 20px;
+        }
+        
+      }
+      html,body{
+        height: 100%
+        margin: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f4f4f9;
+      }
+      body{
+        display: flex;
+        flex-direction: column;
+        text-aling: center;
+      }
+      header{
+        padding: 20px;
+        background-color: coral;
+        color: azure;
+      }
+      h1{
+        text-shadow: 0 0 10px #bc13fe, 0 0 20px #bc13fe; 
+      }
+      footer img{
+        transition: transform 0.4s cubic.bezier(0.175, 0.885, 0.32, 1.275);
+        max-width: 100%;
+      }
+      footer img:hover{
+        transform: scale(1.15); 
+      }
+      /* Clase .semana para Tarjetas Elegantes */
+        .semana {
+            background-color: white;
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 25px;
+            text-align: left; /* Alineación para mejor lectura */
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            border-left: 8px solid rgb(208, 118, 163);
+            transition: transform 0.3s ease;
+        }
+
+        .semana:hover {
+            transform: scale(1.02); /* Pequeño salto al pasar el mouse */
+        }
+
+        .semana h2 {
+            margin-top: 0;
+            color: #444;
+        }
+      </style>
+</head>
+<body>
+   <header>
+        <h1>Bitácora segunda y tercera unidad</h1>
+   </header>
+    <main>
+        <h4>Contenido de mi página web</h4>
+    </main>
+    <div class="semana">
+            <h2>Semana 1: Introducción</h2>
+            <p>Aprendimos los conceptos básicos del HTML y cómo llegas a estructurarlo en una página web, también usando etiqueta semánticas.</p>
+
+            <a href="recursos/Introducción Arduino SA 11B.pdf" class="boton-pdf" target="_blank">
+        <span style="margin-right: 8px;">📄</span> Ver Documento PDF
+    </a>
+        </div>
+
+        <div class="semana">
+            <h2>Semana 2: Estilos CSS</h2>
+            <p>En esta clase aplicamos sombras, colores y efectos de transición para mejorar la vista del usuario.</p>
+            <video controls width="100%" style="border-radius: 10px; margin-top: 15px;">
+        <source src="recursos/Grabación 2026-05-12 115326.mp4" type="video/mp4">
+        Tu navegador no soporta videos HTML5.
+    </video>
+        </div>
+        
+    <footer>
+        <span>2026 @heladitos</span>
+        <img src="https://www.capouilliez.edu.gt/assets/img/logo.png" alt="" width="365px" height="200px">
+    </footer>
+</body>
+</html>
