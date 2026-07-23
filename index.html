@@ -6,26 +6,36 @@
     <title>Bitácora tecnología Andrade</title>
     <link rel="icon" href="recursos/img/LC1.png" type="image/png">
     <style>
-        html,body{
+        html, body {
             height: 100%;
             margin: 0;
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #e0f7fa; /* Fondo celeste suave */
         }
-        body{
+
+        body {
             display: flex;
-            flex-direction:   column;
+            flex-direction: column;
             text-align: center;
         }
-        header{
+
+        header {
             padding: 20px;
-            background-color: rgb(208, 118, 163);
+            background-color: #00bcd4; /* Encabezado celeste brillante */
+            color: azure;
         }
-        h1{
-            color: rgb(229, 160, 196);
+
+        h1 {
+            color: #ffffff;
             margin: 0;
-            text-shadow: 0 0 5px #fff, 0 0 10px #f9d685, 0 0 20px #df6969, 0 0 40px #ff26de;
+            text-shadow: 
+                0 0 5px #fff, 
+                0 0 10px #80deea, 
+                0 0 20px #00e5ff, 
+                0 0 40px #00b0ff; /* Efecto resplandor celeste */
         }
-        main{
+
+        main {
             flex: 1;
             padding: 40px 20px;
             max-width: 1200px;
@@ -33,47 +43,34 @@
             width: 100%;
             box-sizing: border-box;
         }
-        footer{
+
+        footer {
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 15px 50px;
-            border-top: 1px solid rgb(79, 230, 19);
-            background-color: cadetblue;
+            border-top: 1px solid #00e5ff;
+            background-color: #4dd0e1;
+            color: #004d40;
         }
-        @media(max-width:600px){
-            footer{
+
+        @media(max-width:600px) {
+            footer {
                 flex-direction: column;
                 gap: 15px;
                 padding: 20px;
             }
         }
-        html,body{
-            height: 100%;
-            margin: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f4f4f9;
-        }
-        body{
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-        }
-        header{
-            padding: 20px;
-            background-color: coral;
-            color: azure;
-        }
-        h1{
-            text-shadow: 0 0 10px #bc13fe, 0 0 20px #bc13fe; 
-        }
-        footer img{
+
+        footer img {
             transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             max-width: 100%;
         }
-        footer img:hover{
+
+        footer img:hover {
             transform: scale(1.15); 
         }
+
         /* Clase .semana para Tarjetas Elegantes */
         .semana {
             background-color: white;
@@ -81,8 +78,8 @@
             padding: 25px;
             margin-bottom: 25px;
             text-align: left; /* Alineación para mejor lectura */
-            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-            border-left: 8px solid rgb(208, 118, 163);
+            box-shadow: 0 10px 25px rgba(0, 188, 212, 0.15);
+            border-left: 8px solid #00bcd4; /* Borde izquierdo celeste */
             transition: transform 0.3s ease;
         }
 
@@ -92,7 +89,7 @@
 
         .semana h2 {
             margin-top: 0;
-            color: #444;
+            color: #00838f; /* Texto de los títulos internos en azul oscuro */
         }
     </style>
 </head>
@@ -152,14 +149,19 @@
                 <video src="circuito 20jul.mov" width="100%" height="360px" controls style="border-radius: 10px;"></video>
             </div>
         </div>
+
+        <div class="semana">
+            <h2>Semana 7: Título de la Semana 7</h2>
+            <p>Escribe aquí una breve descripción sobre la actividad o circuito que realizaste esta semana.</p>
+            <div class="contenedor-recurso">
+                <video src="video_semana7.mp4" width="100%" height="360px" controls style="border-radius: 10px;"></video>
+            </div>
+        </div>
     </main>
 
     <footer>
         <span>2026 @heladitos</span>
         <img src="https://www.capouilliez.edu.gt/assets/img/logo.png" alt="Logo" width="200px" height="200px">
     </footer>
-</body>
-</html>
-</html>
 </body>
 </html>
